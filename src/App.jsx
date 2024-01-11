@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Bot from "./components/Bot";
+import Education from "./components/Education";
 
 const App = () => {
   return (
@@ -17,8 +18,9 @@ const App = () => {
       <Hero />
       <About />
       <Skills />
-      <Hireme />
+      {/* <Hireme /> */}
       <Project />
+      <Education/>
       <Contact />
       <Footer />
     </div>

@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/project-1.png";
 import project2 from "../assets/images/project-2.jpg";
 import project3 from "../assets/images/project-3.jpg";
-import project4 from "../assets/images/project-4.jpg";
+import project4 from "../assets/images/project-4.png";
 import project5 from "../assets/images/project-5.png";
-import project_person from "../assets/images/project_person1.png";
+import project6 from '../assets/images/project-6.png'; 
+import project7 from "../assets/images/project-7.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -13,35 +14,49 @@ import { Pagination, Autoplay } from "swiper";
 const Project = () => {
   const projects = [
     {
-      img: project1,
-      name: "Movie App",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
-    },
-    {
       img: project2,
-      name: "Job search Web App",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
+      name: "Netflix Clone",
+      github_link: "https://github.com/aryyan0701/Netflix_Clone",
+      //live_link: "https://myjobsearch.netlify.app",
     },
     {
       img: project3,
-      name: "Highking",
-      github_link: "https://github.com/Sridhar-C-25/highking",
-      live_link: "https://highking01.netlify.app",
+      name: "Currency converter",
+      github_link: "https://github.com/aryyan0701/Currency_converter",
+     // live_link: "https://highking01.netlify.app",
     },
     {
+      img: project1,
+      name: "Type Verse (Check your typing speed)",
+      github_link: "https://github.com/aryyan0701/type_verse",
+      live_link: "https://aryyan0701.github.io/type_verse/",
+    },
+   
+    {
       img: project4,
-      name: "React Nav",
+      name: "React login/signup Form",
       github_link:
-        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      live_link: "https://reacttailwindnavbar.netlify.app",
+        "https://github.com/aryyan0701/React-form",
+      live_link: "https://demo-signin-up-page.netlify.app/",
+    },
+    {
+      img: project6,
+      name: "To-do List",
+      github_link: "https://github.com/aryyan0701/Todo-list",
+      live_link: "https://tik-take-tooo.netlify.app/",
     },
     {
       img: project5,
-      name: "Vue Country",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://vuecountry05.netlify.app",
+      name: "Tic Tac Toe Game",
+      github_link: "https://github.com/aryyan0701/Tic_Tac_toe",
+      live_link: "https://tik-take-tooo.netlify.app/",
+    },
+   
+    {
+      img: project7,
+      name: "My Personal Work",
+      github_link: "https://github.com/aryyan0701/My_work",
+     live_link: "https://aryyan0701.github.io/My_work/",
     },
   ];
   return (
@@ -50,11 +65,11 @@ const Project = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
+        <p className="text-gray-400 mt-3 text-lg">My Works</p>
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-        <div className="lg:w-2/3 w-full">
+        <div className="lg:w-12/13 w-full h-full">
           <Swiper
             slidesPerview={1.2}
             spaceBetween={20}
@@ -97,9 +112,6 @@ const Project = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-        <div className="lg:block hidden">
-          <img src={project_person} alt="" />
         </div>
       </div>
     </section>
