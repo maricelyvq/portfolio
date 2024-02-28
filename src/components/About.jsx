@@ -7,7 +7,7 @@ const About = () => {
   ];
 
   const handleDownload = () => {
-    const filePath = 'https://aryyan0701.github.io/portfolio/assets/Resume.pdf';
+    const filePath = 'https://aryyan0701.github.io/portfolio/Resume.pdf';
     const link = document.createElement('a');
     link.href = filePath;
     link.download = 'Resume.pdf';
