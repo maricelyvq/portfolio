@@ -5,6 +5,18 @@ const About = () => {
     { text: "Completed Projects", count: "10" },
     //{ text: "Companies Work", count: "06" },
   ];
+
+  const handleDownload = () => {
+    const filePath = 'https://aryyan0701.github.io/portfolio/assets/Resume.pdf';
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = 'Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
   return (
     <section id="about" className="py-10 text-white">
       <div className="text-center mt-8">
@@ -44,9 +56,7 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="https://aryyan0701.github.io/portfolio/assets/Resume.pdf" download>
-                <button className="btn-primary">Download CV</button>
-              </a>
+              <button className="btn-primary" onClick={handleDownload}>Download CV</button>
             </div>
           </div>
         </div>
