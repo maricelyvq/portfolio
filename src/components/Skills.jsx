@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 
 const Skills = () => {
   const skills = [
@@ -21,28 +22,16 @@ const Skills = () => {
       count:70,
     },
     {
-      name:"TYPESCRIPT",
-      logo:"logo-typescript",
-      level: "Beginner",
-      count:35,
-    },
-    {
-      name:"PYTHON",
-      logo:"logo-python",
-      level: "Intermediate",
-      count:55,
-    },
-    {
       name:"REACT JS",
       logo: "logo-react",
       level: "Intermediate",
       count: 60,
     },
     {
-      name:"GITHUB",
-      logo: "logo-github",
-      level: "Intermediate",
-      count: 75,
+      name:"ANGULAR",
+      logo:"logo-angular",
+      level: "Beginner",
+      count:50,
     },
     {
       name:"FIREBASE",

@@ -3,19 +3,16 @@ const About = () => {
   const info = [
     // { text: "Years experience", count: "04" },
     { text: "Completed Projects", count: "10" },
-    //{ text: "Companies Work", count: "06" },
+    { text: "Companies Work", count: "01" }
   ];
 
-  const handleDownload = () => {
-    const filePath = 'https://aryyan0701.github.io/portfolio/Resume.pdf';
-    const link = document.createElement('a');
-    link.href = filePath;
-    link.download = 'Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+ 
+  const googleDriveLink = "https://drive.google.com/file/d/1OzuOrRm0Rn9g7xwO6RUO9zUZHkvxFjtr/view?usp=drivesdk";
 
+
+  const navigateToResume = () => {
+    window.open(googleDriveLink, "_blank");
+  };
 
   return (
     <section id="about" className="py-10 text-white">
@@ -28,20 +25,11 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                I am a 3rd year B.Tech. software engineer student now a days
-                seeking an internship opportunity in this field by applying and
-                enhancing my technical skills and gaining practical experience.
+              I am currently pursuing my passion as a Frontend Developer, specializing in Angular development. With hands-on experience in crafting dynamic user interfaces, I bring a blend of creativity and technical expertise to my role.
+                <br />Having secured an internship as a Frontend Developer at a reputable company, I've dived headfirst into Angular development, harnessing the power of Bootstrap for responsive and visually appealing designs. Additionally, my journey has acquainted me with Node.js, empowering me to contribute to server-side functionalities as well.
                 <br />
-                As a frontend developer with a focus on React and Next.js, I
-                transform static designs into dynamic, responsive, and
-                high-performance web applications. With a keen eye for detail, I
-                work to create user interfaces that not only meet but exceed
-                modern standards of interactivity and aesthetics.
-                <br />
-                My passion lies in building robust and scalable user interfaces.
-                Leveraging the power of React components and the seamless
-                navigation capabilities of Next.js, I create immersive and
-                performant web experiences that adapt to every device.
+                Beyond Angular, I possess a versatile skill set. I am proficient in React.js,TypeScript, Firebase, and GitHub, ensuring that I am well-equipped to adapt to diverse project requirements.
+                <br /> My focus lies in delivering exceptional user experiences through intuitive and scalable UI components.I have honed my skills in crafting impressive user interfaces, ensuring seamless navigation and optimal performance across devices.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
@@ -56,7 +44,7 @@ const About = () => {
               </div>
               <br />
               <br />
-              <button className="btn-primary" onClick={handleDownload}>Download CV</button>
+              <button className="btn-primary" onClick={navigateToResume}>Check Resume</button>
             </div>
           </div>
         </div>

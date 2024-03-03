@@ -1,8 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/project-1.png";
-import project2 from "../assets/images/project-2.jpg";
-import project3 from "../assets/images/project-3.jpg";
+import project2 from "../assets/images/project-2.png";
+import project3 from "../assets/images/project-3.png";
 import project4 from "../assets/images/project-4.png";
 import project5 from "../assets/images/project-5.png";
 import project6 from '../assets/images/project-6.png'; 
@@ -43,15 +43,8 @@ const Project = () => {
       img: project6,
       name: "To-do List",
       github_link: "https://github.com/aryyan0701/Todo-list",
-      live_link: "https://tik-take-tooo.netlify.app/",
+      live_link: "https://github.com/aryyan0701/Todo-list",
     },
-    {
-      img: project5,
-      name: "Tic Tac Toe Game",
-      github_link: "https://github.com/aryyan0701/Tic_Tac_toe",
-      live_link: "https://tik-take-tooo.netlify.app/",
-    },
-   
     {
       img: project7,
       name: "My Personal Work",
@@ -60,7 +53,7 @@ const Project = () => {
     },
   ];
   return (
-    <section id="projects" className="py-10 text-white">
+    <section id="projects" className="py-20 text-white">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
@@ -69,7 +62,7 @@ const Project = () => {
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-        <div className="lg:w-12/13 w-full h-full">
+        <div className="lg:w-12/13 w-full h-full ">
           <Swiper
             slidesPerview={1.2}
             spaceBetween={20}
