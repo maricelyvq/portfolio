@@ -4,9 +4,8 @@ import project1 from "../assets/images/project-1.png";
 import project2 from "../assets/images/project-2.png";
 import project3 from "../assets/images/project-3.png";
 import project4 from "../assets/images/project-4.png";
-import project5 from "../assets/images/project-5.png";
-import project6 from '../assets/images/project-6.png'; 
-import project7 from "../assets/images/project-7.png";
+import project6 from '../assets/images/project-6.jpg'; 
+import project7 from "../assets/images/project-7.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -20,18 +19,17 @@ const Project = () => {
       //live_link: "https://myjobsearch.netlify.app",
     },
     {
-      img: project3,
-      name: "Currency converter",
-      github_link: "https://github.com/aryyan0701/Currency_converter",
-     // live_link: "https://highking01.netlify.app",
-    },
-    {
       img: project1,
       name: "Type Verse (Check your typing speed)",
       github_link: "https://github.com/aryyan0701/type_verse",
       live_link: "https://aryyan0701.github.io/type_verse/",
     },
-   
+       {
+      img: project3,
+      name: "Currency converter",
+      github_link: "https://github.com/aryyan0701/Currency_converter",
+     // live_link: "https://highking01.netlify.app",
+    },
     {
       img: project4,
       name: "React login/signup Form",
@@ -41,15 +39,15 @@ const Project = () => {
     },
     {
       img: project6,
-      name: "To-do List",
-      github_link: "https://github.com/aryyan0701/Todo-list",
-      live_link: "https://github.com/aryyan0701/Todo-list",
+      name: "Bloggify",
+      github_link: "https://github.com/aryyan0701/Bloggify",
+      live_link: "https://aryyan0701.github.io/Bloggify/",
     },
     {
       img: project7,
-      name: "My Personal Work",
-      github_link: "https://github.com/aryyan0701/My_work",
-     live_link: "https://aryyan0701.github.io/My_work/",
+      name: "Sandbox Clone",
+      github_link: "https://github.com/aryyan0701/sandbox_clone",
+     live_link: "https://aryyan0701.github.io/sandbox_clone/",
     },
   ];
   return (
@@ -98,7 +96,7 @@ const Project = () => {
                       target="_blank"
                       className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                     >
-                      Live Demo
+                      Live
                     </a>
                   </div>
                 </div>

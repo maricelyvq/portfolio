@@ -22,7 +22,7 @@ const Skills = () => {
       count:70,
     },
     {
-      name:"REACT JS",
+      name:"REACT",
       logo: "logo-react",
       level: "Intermediate",
       count: 60,
@@ -44,7 +44,7 @@ const Skills = () => {
       logo: "logo-nodejs",
       level: "Beginner",
       count: 40,
-    },
+    }
   ];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
