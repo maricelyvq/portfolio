@@ -1,11 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import project1 from "../assets/images/project-1.png";
-import project2 from "../assets/images/project-2.png";
-import project3 from "../assets/images/project-3.png";
-import project4 from "../assets/images/project-4.png";
-import project6 from "../assets/images/project-6.png"; 
-import project7 from "../assets/images/project-7.png";
+import projectOne from "../assets/images/project-1.png";
+import projectTwo from "../assets/images/project-2.png";
+import projectThree from "../assets/images/project-3.png";
+import projectFour from "../assets/images/project-4.png";
+import projectSix from "../assets/images/project-6.png"; 
+import projectSeven from "../assets/images/project-7.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -13,38 +13,38 @@ import { Pagination, Autoplay } from "swiper";
 const Project = () => {
   const projects = [
     {
-      img: project2,
+      img: projectTwo,
       name: "Netflix Clone",
       github_link: "https://github.com/aryyan0701/Netflix_Clone",
       //live_link: "https://myjobsearch.netlify.app",
     },
     {
-      img: project1,
+      img: projectOne,
       name: "Type Verse (Check your typing speed)",
       github_link: "https://github.com/aryyan0701/type_verse",
       live_link: "https://aryyan0701.github.io/type_verse/",
     },
        {
-      img: project3,
+      img: projectThree,
       name: "Currency converter",
       github_link: "https://github.com/aryyan0701/Currency_converter",
      // live_link: "https://highking01.netlify.app",
     },
     {
-      img: project4,
+      img: projectFour,
       name: "React login/signup Form",
       github_link:
         "https://github.com/aryyan0701/React-form",
       live_link: "https://demo-signin-up-page.netlify.app/",
     },
     {
-      img: project6,
+      img: projectSix,
       name: "Bloggify",
       github_link: "https://github.com/aryyan0701/Bloggify",
       live_link: "https://aryyan0701.github.io/Bloggify/",
     },
     {
-      img: project7,
+      img: projectSeven,
       name: "Sandbox Clone",
       github_link: "https://github.com/aryyan0701/sandbox_clone",
      live_link: "https://aryyan0701.github.io/sandbox_clone/",
