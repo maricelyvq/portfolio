@@ -4,7 +4,7 @@ import project1 from "../assets/images/project-1.png";
 import project2 from "../assets/images/project-2.png";
 import project3 from "../assets/images/project-3.png";
 import project4 from "../assets/images/project-4.png";
-import project6 from '../assets/images/project-6.jpg'; 
+import project6 from "../assets/images/project-6.jpg"; 
 import project7 from "../assets/images/project-7.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
