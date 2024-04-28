@@ -6,9 +6,9 @@ import projectThree from "../assets/images/project-3.png";
 import projectFour from "../assets/images/project-4.png";
 import projectSix from "../assets/images/project-6.png"; 
 import projectSeven from "../assets/images/project-7.png";
+import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper";
 
 const Project = () => {
   const projects = [
