@@ -17,8 +17,8 @@ const App = () => {
       <Bot />
       <Hero />
       <About />
+      <Hireme />
       <Skills />
-      {/* <Hireme /> */}
       <Project />
       <Education/>
       <Contact />

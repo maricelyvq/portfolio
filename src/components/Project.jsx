@@ -32,10 +32,10 @@ const Project = () => {
     },
     {
       img: projectFour,
-      name: "React login/signup Form",
+      name: "Quizzify",
       github_link:
-        "https://github.com/aryyan0701/React-form",
-      live_link: "https://demo-signin-up-page.netlify.app/",
+        "https://github.com/aryyan0701/Quizzify",
+      live_link: "https://quizzad.netlify.app/",
     },
     {
       img: projectSix,
