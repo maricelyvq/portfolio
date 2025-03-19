@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import my2 from "../assets/images/my2.jpg";
+import my2 from "../assets/images/hireMe.png";
 import Type from "./Type";
 
 const socialMediaLinks = [
-  "https://www.instagram.com/_aaaryaan__/",
-  "https://github.com/aryyan0701",
-  "https://www.linkedin.com/in/aryan-kadam-568083204/",
-  "https://twitter.com/aaryyan_",
+  "https://www.instagram.com/",
+  "https://github.com/maricelyvq",
+  "https://www.linkedin.com/in/maricelyvq/",
+  "https://twitter.com/maricelyvq_",
 ];
 
 
@@ -39,7 +39,7 @@ const Hero = () => {
               Hello!
               <br />
             </span>
-            My Name is <span>Aryan Kadam</span>
+            My Name is <span>Maricely Villalobs</span>
           </h1>
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
                 <Type/>
