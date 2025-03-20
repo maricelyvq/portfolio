@@ -19,13 +19,13 @@ const Skills = () => {
       name: "JAVASCRIPT",
       logo: "logo-javascript",
       level: "Intermediate",
-      count: 50,
+      count: 60,
     },
     {
       name: "REACT",
       logo: "logo-react",
-      level: "Intermediate",
-      count: 60,
+      level: "Beginner",
+      count: 40,
     },
 
     {
@@ -37,14 +37,14 @@ const Skills = () => {
     {
       name: "NODEJS",
       logo: "logo-nodejs",
-      level: "Beginner",
-      count: 40,
+      level: "Intermediate",
+      count: 60,
     },
     {
       name: "SQL",
       logo: "server-outline",
       level: "Intermediate",
-      count: 50,
+      count: 60,
     },
     {
       name: "EXPRESS",
@@ -56,7 +56,7 @@ const Skills = () => {
       name: "PYTHON",
       logo: "logo-python",
       level: "Beginner",
-      count: 40,
+      count: 45,
     },
     {
       name: "JAVA",

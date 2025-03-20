@@ -32,3 +32,18 @@ textarea {
 ::selection {
   @apply bg-cyan-600;
 }
+
+@keyframes focus-animation {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.5);
+    filter: brightness(2);
+  }
+}
+
+.animate-icons a {
+  animation: focus-animation 1s ease-in-out;
+}
