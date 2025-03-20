@@ -47,7 +47,7 @@ const Skills = () => {
     },
     {
       name: "SQL",
-      logo: "logo-SQL",
+      logo: "server-outline",
       level: "Beginner",
       count: 40,
     },
@@ -65,13 +65,13 @@ const Skills = () => {
     },
     {
       name: "JAVA",
-      logo: "logo-java",
+      logo: "desktop-outline",
       level: "Beginner",
       count: 30,
     },
     {
       name: "AWS",
-      logo: "logo-aws", 
+      logo: "cloud-outline", 
       level: "Beginner",
       count: 30,
     }
