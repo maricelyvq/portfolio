@@ -4,7 +4,7 @@ A responsive portfolio built using React.js and Tailwind CSS.
 
 ## Live Preview
 
-Check out the live preview [here](https://maricelyvillalobs.netlify.app/).
+Check out the live preview [here](https://maricelyvillalobos.netlify.app/).
 
 ## Installation
 
