@@ -1,11 +1,19 @@
-# react_portfolio
-responsive portfolio using react js and tailwind css
+# React Portfolio
 
-live preview : https://johnalexportfolio.netlify.app/
+A responsive portfolio built using React.js and Tailwind CSS.
 
-1.npm i
-2.npm run dev
+## Live Preview
 
-mail: codeaprogram@gmail.com
+Check out the live preview [here](https://maricelyvillalobs.netlify.app/).
 
-happy coding :)
+## Installation
+
+1. Install dependencies:
+    ```bash
+    npm install
+    ```
+2. Start the development server:
+    ```bash
+    npm run dev
+    ```
+Happy coding! 😊
