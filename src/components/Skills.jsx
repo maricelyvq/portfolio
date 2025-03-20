@@ -19,7 +19,7 @@ const Skills = () => {
       name: "JAVASCRIPT",
       logo: "logo-javascript",
       level: "Intermediate",
-      count: 70,
+      count: 50,
     },
     {
       name: "REACT",
@@ -27,15 +27,10 @@ const Skills = () => {
       level: "Intermediate",
       count: 60,
     },
+
     {
-      name: "Angular",
-      logo: "logo-angular",
-      level: "Beginner",
-      count: 50,
-    },
-    {
-      name: "FIREBASE",
-      logo: "logo-firebase",
+      name: "MONOGDB",
+      logo: "server-outline",
       level: "Beginner",
       count: 40,
     },
@@ -48,8 +43,8 @@ const Skills = () => {
     {
       name: "SQL",
       logo: "server-outline",
-      level: "Beginner",
-      count: 40,
+      level: "Intermediate",
+      count: 50,
     },
     {
       name: "EXPRESS",
@@ -60,8 +55,8 @@ const Skills = () => {
     {
       name: "PYTHON",
       logo: "logo-python",
-      level: "Intermediate",
-      count: 60,
+      level: "Beginner",
+      count: 40,
     },
     {
       name: "JAVA",
@@ -74,7 +69,15 @@ const Skills = () => {
       logo: "cloud-outline", 
       level: "Beginner",
       count: 30,
+    },
+    {
+      name: "PHP",
+      logo: "logo-php",
+      level: "Beginner",
+      count: 30,
     }
+    
+
   ];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
