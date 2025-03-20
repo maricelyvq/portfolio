@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import my2 from "../assets/images/hireMe.png";
 import Type from "./Type";
 
@@ -13,9 +13,12 @@ const socialMediaLinks = [
 
 const Hero = () => {
   const contactRef = useRef(null);
+  const [animateIcons, setAnimateIcons] = useState(false);
 
-  const scrollToContact = () => {
-    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  const animateSocialMedia = () => {
+    // contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    setAnimateIcons(true);
+    setTimeout(() => setAnimateIcons(false), 1000);
   };
 
   const social_media = [
@@ -44,8 +47,8 @@ const Hero = () => {
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
                 <Type/>
               </h4>
-          <button className="btn-primary mt-8" onClick={scrollToContact}>Connect with Me</button>
-          <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
+          <button className="btn-primary mt-8" onClick={animateSocialMedia}>Connect with Me</button>
+          <div className={`mt-8 text-3xl flex items-center md:justify-start justify-center gap-5 ${animateIcons ? 'animate-icons' : ''}`}>
             {social_media?.map((icon, index) => (
               <a
                 key={icon}
