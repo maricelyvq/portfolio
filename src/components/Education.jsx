@@ -8,12 +8,12 @@ const Education = () => {
       institution: 'Universidad de Oriente, Venezuela',
       grades: '',
       year: ' [2002-2007]',
-      desc: "I completed my Bachelor's degree in Computer Science at Universidad de Oriente, Venezuela. I have a CGPA of 8.5.",
+      desc: "I completed my Bachelor's degree in Computer Science at Universidad de Oriente, Venezuela.",
     
     },
     {
       logo: "logo-play",
-      degree: 'Full Stack Web Development',
+      degree: 'App Development',
       institution: 'Npower,Usa',
       grades: '',
       year: ' [2024-2025]',

@@ -25,11 +25,11 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-              I am currently pursuing b.tech in IT, As a Developer specializing in web development With hands-on experience in crafting dynamic user interfaces, I bring a blend of creativity and technical expertise to my role.
-                <br />Having secured an internship as a Frontend Developer at a reputable company, I've dived headfirst into Angular development, harnessing the power of Bootstrap for responsive and visually appealing designs. Additionally, my journey has acquainted me with Node.js, empowering me to contribute to server-side functionalities as well.
+              I was born in Delaware and raised in Isla de Margarita, a beautiful island in Venezuela that shaped my love for culture, music, and tradition. Growing up, I dreamed of becoming a civil engineer, but life took an unexpected turn, and I ended up enrolling in computer science. In what I can only describe as fate, I discovered a true passion for technology and fell in love with the field, obtaining my Degree in Computer Science.
+                <br/> After many years, I returned to the United States and now call Texas home, embracing new opportunities and challenges. With over 5 years of experience in Information Security and supporting others, I’ve developed personal and professional resilience and adaptability.
                 <br />
-                Beyond Angular, I possess a versatile skill set. I am proficient in javascript, TypeScript, React.js, Bootstrap, Firebase, and GitHub, ensuring that I am well-equipped to adapt to diverse project requirements.
-                <br /> My focus lies in delivering exceptional user experiences through intuitive and scalable UI components.I have honed my skills in crafting impressive user interfaces, ensuring seamless navigation and optimal performance across devices.
+                I enjoy learning new things, especially modern tools and trends, and I’m passionate about improving my skills to contribute meaningfully to my work. Outside of work, I love spending time outdoors, exploring nature, and sharing my love of music and traditions with others. Building connections and growing alongside others is something I truly value. I’m excited to continue bringing my experience, curiosity, and love for learning to everything I do.
+                <br /> 
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
