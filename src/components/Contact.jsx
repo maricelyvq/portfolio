@@ -35,7 +35,9 @@ const Contact = () => {
           className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-         <form ref={form} onSubmit={sendEmail} className="flex flex-col flex-1 gap-5">
+         <form ref={form} 
+         onSubmit={sendEmail} 
+         className="flex flex-col flex-1 gap-5" netlify>
             <input type="text" name="user_name" placeholder="Your Name" required />
             <input type="email" name="user_email" placeholder="Your Email Address" required />
             <textarea name="message" placeholder="Your Message" rows={10} required></textarea>
