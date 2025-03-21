@@ -6,14 +6,14 @@ const Skills = () => {
     {
       name: "HTML",
       logo: "logo-html5",
-      level: "Intermediate",
-      count: 70,
+      level: "Advanced",
+      count: 85,
     },
     {
       name: "CSS",
       logo: "logo-css3",
-      level: "Intermediate",
-      count: 70,
+      level: "Advanced",
+      count: 80,
     },
     {
       name: "JAVASCRIPT",
@@ -62,7 +62,7 @@ const Skills = () => {
       name: "JAVA",
       logo: "desktop-outline",
       level: "Beginner",
-      count: 30,
+      count: 40,
     },
     {
       name: "AWS",
