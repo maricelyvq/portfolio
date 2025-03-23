@@ -1,3 +1,6 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css");
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
@@ -8,7 +11,6 @@ html {
 }
 body {
   @apply box-border bg-[#030120] text-gray-100;
- 
 }
 .btn-primary {
   @apply bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
@@ -21,7 +23,7 @@ body {
 .swiper-pagination-bullet {
   @apply bg-white;
   /* color:#030120;*/
-} 
+}
 
 input,
 textarea {
@@ -48,4 +50,50 @@ textarea {
 
 .animate-icons a {
   animation: focus-animation 1s ease-in-out;
+}
+
+/* Slick Carousel Styles */
+.slick-slider {
+  @apply relative;
+}
+
+.slick-list {
+  @apply overflow-hidden m-0 p-0;
+}
+
+.slick-track {
+  @apply flex;
+}
+
+.slick-slide {
+  @apply h-auto;
+}
+
+.slick-prev,
+.slick-next {
+  @apply absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 bg-gray-800 text-white rounded-full p-2 cursor-pointer;
+}
+
+.slick-prev {
+  @apply left-0;
+}
+
+.slick-next {
+  @apply right-0;
+}
+
+.slick-dots {
+  @apply absolute bottom--6 w-full flex justify-center p-0 m-0 list-none;
+}
+
+.slick-dots li {
+  @apply inline-block;
+}
+
+.slick-dots li button {
+  @apply w-3 h-3 rounded-full bg-gray-400;
+}
+
+.slick-dots li.slick-active button {
+  @apply bg-cyan-600;
 }
