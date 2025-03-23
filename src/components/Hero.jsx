@@ -3,9 +3,9 @@ import my2 from "../assets/images/hireMe.png";
 import Type from "./Type";
 
 const socialMediaLinks = [
-  "https://www.instagram.com/",
-  "https://github.com/maricelyvq",
   "https://www.linkedin.com/in/maricelyvq/",
+  "https://github.com/maricelyvq",
+  "https://www.instagram.com/maricelyvillalobos/",
   "https://twitter.com/maricelyvq_",
 ];
 
@@ -22,9 +22,9 @@ const Hero = () => {
   };
 
   const social_media = [
-    "logo-instagram",
-    "logo-github",
     "logo-linkedin",
+    "logo-github",
+    "logo-instagram",
     "logo-twitter",
   ];
   return (
@@ -44,11 +44,11 @@ const Hero = () => {
             </span>
             My Name is <span>Maricely Villalobos</span>
           </h1>
-          <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
+          <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-300">
                 <Type/>
-              </h4>
+          </h4>
           <button className="btn-primary mt-8" onClick={animateSocialMedia}>Connect with Me</button>
-          <div className={`mt-8 text-3xl flex items-center md:justify-start justify-center gap-5 ${animateIcons ? 'animate-icons' : ''}`}>
+          <div className={`mt-8 text-3xl flex items-center md:justify-start justify-center gap-10 ${animateIcons ? 'animate-icons' : ''}`}>
             {social_media?.map((icon, index) => (
               <a
                 key={icon}

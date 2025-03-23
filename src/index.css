@@ -7,7 +7,8 @@ html {
   @apply font-Poppins scroll-smooth;
 }
 body {
-  @apply box-border bg-gray-900 text-gray-100;
+  @apply box-border bg-[#030120] text-gray-100;
+ 
 }
 .btn-primary {
   @apply bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
@@ -19,11 +20,12 @@ body {
 
 .swiper-pagination-bullet {
   @apply bg-white;
-}
+  /* color:#030120;*/
+} 
 
 input,
 textarea {
-  @apply bg-gray-700 outline-none rounded-lg p-3;
+  @apply bg-gray-100 outline-none rounded-lg p-3;
 }
 ::placeholder {
   @apply text-lg;
@@ -39,7 +41,7 @@ textarea {
     filter: brightness(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(2.5);
     filter: brightness(2);
   }
 }

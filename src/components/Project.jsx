@@ -6,7 +6,6 @@ import projectThree from "../assets/images/project-3.png";
 import projectFour from "../assets/images/project-4.png";
 import projectFive from "../assets/images/project-5.png";
 
-
 import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,35 +15,35 @@ const Project = () => {
     {
       img: projectOne,
       name: "HTML Project",
-      github_link: "https://github.com/maricelyvq",
-      //live_link: "",
+      github_link: "",
+      live_link: "",
     },
     {
       img: projectTwo,
       name: "Email Template Webpage",
       github_link: "https://github.com/maricelyvq/CSS-Project.git",
-      //live_link: "",
+      live_link: "",
     },
-       {
+    {
       img: projectThree,
       name: "TODO list that uses JavaScript.",
       github_link: "https://github.com/maricelyvq/JS_Project.git",
-     // live_link: "",
+      live_link: "",
     },
     {
       img: projectFour,
       name: "Book Store Website",
-      github_link:"https://github.com/maricelyvq/Path2tech-Dom_Project.git",
-     // live_link: "",
+      github_link: "https://github.com/maricelyvq/Path2tech-Dom_Project.git",
+      live_link: "",
     },
     {
       img: projectFive,
       name: "Weather App using React",
       github_link: "https://github.com/maricelyvq/Weather-App-Template.git",
-      //live_link: "",
-    },
-
+      live_link: "",
+    }
   ];
+
   return (
     <section id="projects" className="py-20 text-white">
       <div className="text-center">
@@ -57,7 +56,7 @@ const Project = () => {
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
         <div className="lg:w-12/13 w-full h-full ">
           <Swiper
-            slidesPerview={1.2}
+            slidesPerView={1.2}
             spaceBetween={20}
             breakpoints={{
               768: {
@@ -75,24 +74,32 @@ const Project = () => {
           >
             {projects.map((project_info, i) => (
               <SwiperSlide key={i}>
-                <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
-                  <img src={project_info.img} alt="" className="rounded-lg"  />
+                <div className="h-90 w-full p-4 bg-slate-700 rounded-xl flex flex-col items-center">
+                  <img src={project_info.img} alt="" className="rounded-lg w-full h-56 object-cover" />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex gap-3">
-                    <a
-                      href={project_info.github_link}
-                      target="_blank"
-                      className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                    >
-                      Github
-                    </a>
-                    <a
-                      href={project_info.live_link}
-                      target="_blank"
-                      className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                    >
-                      Live
-                    </a>
+                    {project_info.github_link ? (
+                      <a
+                        href={project_info.github_link}
+                        target="_blank"
+                        className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                      >
+                        Github
+                      </a>
+                    ) : (
+                      <span className="text-gray-600 bg-gray-800 px-2 py-1 inline-block cursor-not-allowed">
+                        Github
+                      </span>
+                    )}
+                    {project_info.live_link && project_info.live_link !== "" && (
+                      <a
+                        href={project_info.live_link}
+                        target="_blank"
+                        className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                      >
+                        Live
+                      </a>
+                    )}
                   </div>
                 </div>
               </SwiperSlide>
