@@ -11,6 +11,7 @@ import Badge5 from "../assets/images/badges/Badge5.png";
 import Badge6 from "../assets/images/badges/Badge6.png";
 import Badge7 from "../assets/images/badges/Badge7.png";
 import Badge8 from "../assets/images/badges/Badge8.png";
+import Badge9 from "../assets/images/badges/Badge9.png";
 
 const socialMediaLinks = [
   "https://www.linkedin.com/in/maricelyvq/",
@@ -20,7 +21,7 @@ const socialMediaLinks = [
 ];
 
 const badgeImages = [
-  Badge1,
+  Badge1 ,
   Badge2,
   Badge3,
   Badge4,
@@ -28,6 +29,7 @@ const badgeImages = [
   Badge6,
   Badge7,
   Badge8,
+  Badge9,
 ];
 
 const Hero = () => {
@@ -97,18 +99,20 @@ const Hero = () => {
               </a>
             ))}
           </div>
-          {/* <a href="https://www.credly.com/users/maricelyvq" target="_blank" rel="noopener noreferrer"></a> */}
-          <div className="w-full justify-center mt-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"> 
+          <div className="w-full justify-center mt-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" > 
+
             <Slider {...settings}>
               {badgeImages.map((image, index) => (
-                <div key={index} className="p-2 flex justify-center items-center">
+                <div key={index} className="p-2 flex justify-center items-center" alt="Certification Badge">
                   <img src={image} alt={`Badge ${index + 1}`} className="w-18 h-18 object-contain" />
                 </div>
               ))}
             </Slider>
           </div>
+        
         </div>
       </div>
+     
       <div ref={contactRef}></div>
     </section>
   );
