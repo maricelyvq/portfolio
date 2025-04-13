@@ -43,7 +43,7 @@ textarea {
     filter: brightness(1);
   }
   50% {
-    transform: scale(2.5);
+    transform: scale(3);
     filter: brightness(2);
   }
 }

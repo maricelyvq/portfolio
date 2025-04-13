@@ -1,4 +1,5 @@
 import React from 'react';
+import Badges from "./Badges";
 
 const Skills = () => {
   const skills = [
@@ -83,12 +84,12 @@ const Skills = () => {
  
   ];
   return (
-    <section id="skills" className="py-10 bg-gray-100 Relative">
+    <section id="skills" className="py-5 bg-gray-100 Relative">
       <div className="mt-8 text-gray-100 text-center">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
+        <p className="text-gray-400 mt-3 text-lg">Technologies I work with</p>
         <div className="flex items-center justify-center mt-12 gap-8 flex-wrap">
           {skills?.map((skill, i) => (
             <div
@@ -102,7 +103,7 @@ const Skills = () => {
                 }}
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
-                <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
+                <div className="text-6xl w-24 h-24 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
                   {skill.logo.startsWith("fa") ? (
                     <i className={skill.logo}></i>
                   ) : (
@@ -114,6 +115,8 @@ const Skills = () => {
             </div>
           ))}
         </div>
+        <div className="flex justify-center mt-10">
+        {<Badges />} </div>
       </div>
     </section>
   );
