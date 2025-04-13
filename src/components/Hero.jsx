@@ -3,15 +3,7 @@ import Slider from "react-slick";
 import my2 from "../assets/images/hireMe.png";
 import Type from "./Type";
 
-import Badge1 from "../assets/images/badges/Badge1.png";
-import Badge2 from "../assets/images/badges/Badge2.png";
-import Badge3 from "../assets/images/badges/Badge3.png";
-import Badge4 from "../assets/images/badges/Badge4.png";
-import Badge5 from "../assets/images/badges/Badge5.png";
-import Badge6 from "../assets/images/badges/Badge6.png";
-import Badge7 from "../assets/images/badges/Badge7.png";
-import Badge8 from "../assets/images/badges/Badge8.png";
-import Badge9 from "../assets/images/badges/Badge9.png";
+
 
 const socialMediaLinks = [
   "https://www.linkedin.com/in/maricelyvq/",
@@ -20,17 +12,7 @@ const socialMediaLinks = [
   "https://twitter.com/maricelyvq_",
 ];
 
-const badgeImages = [
-  Badge1 ,
-  Badge2,
-  Badge3,
-  Badge4,
-  Badge5,
-  Badge6,
-  Badge7,
-  Badge8,
-  Badge9,
-];
+
 
 const Hero = () => {
   const contactRef = useRef(null);
@@ -45,19 +27,9 @@ const Hero = () => {
     "logo-linkedin",
     "logo-github",
     "logo-instagram",
-    "logo-twitter",
+    "logo-x",
   ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: false,
-  };
 
   return (
     <section
@@ -99,17 +71,7 @@ const Hero = () => {
               </a>
             ))}
           </div>
-          <div className="w-full justify-center mt-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" > 
-
-            <Slider {...settings}>
-              {badgeImages.map((image, index) => (
-                <div key={index} className="p-2 flex justify-center items-center" alt="Certification Badge">
-                  <img src={image} alt={`Badge ${index + 1}`} className="w-18 h-18 object-contain" />
-                </div>
-              ))}
-            </Slider>
-          </div>
-        
+  
         </div>
       </div>
      

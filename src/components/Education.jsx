@@ -22,7 +22,7 @@ const Education = () => {
     {
       logo: "school-sharp",
       degree: 'IBM Z/OS Mainframe Pre-Apprenticeship',
-      institution: 'Franklin,Usa',
+      institution: 'Franklin Skills,Usa',
       grades: '',
       year: ' [2022-2023]',
       desc: "Completed 105+ hours of hands-on training in IBM z/OS system fundamentals, gaining skills in TSO/ISPF, JCL, RACF, system utilities, and mainframe operations. Developed an understanding of enterprise computing, security protocols, and job scheduling while working with real-world mainframe environments. Strengthened problem-solving abilities and learned best practices for system administration, batch processing, and automation. Engaged with the IBM New to Z community to expand industry knowledge and professional networking.",       
